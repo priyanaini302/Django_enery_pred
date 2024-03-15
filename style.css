@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom right, #16648E, #168E63);
+}
+
+.container {
+    max-width: 1000px;
+}
+
+/* Add padding and style to the form */
+form {
+    background: linear-gradient(to bottom right, #073D4F, #074738);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Adjust button styling */
+.btn-primary {
+    background-color: #168E63;
+    border-color: #168E63;
+    color: #ffffff;
+    width: 100%; /* Full width button */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #16648E;
+    border-color: #16648E;
+}
+
+/* Optional: Style labels */
+label {
+    font-weight: bold;
+    color: #ffff; /* Label text color */
+}
+
+/* Optional: Adjust overall text color */
+body, input {
+    color: #ffff; /* Text color */
+}
+
+/* Optional: Add spacing to the form elements */
+.form-control {
+    margin-top: 20px;
+    background-color: #6ba1b3;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.mb-4{
+    text-align: center;
+}
+.custom-button {
+    background-color: #168E63; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}

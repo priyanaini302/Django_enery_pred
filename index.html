@@ -1,0 +1,50 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Forecasting Energy</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Forecasting Energy Level in Steel Industries</h2>
+        <form method="post" action="register">
+            {% csrf_token %}
+            
+            <!-- Lagging_Current_Reactive_Power -->
+            <div class="form-group">
+                <label for="Lagging_Current_Reactive_Power">Lagging Current Reactive Power:</label>
+                <input type="number" class="form-control" id="Lagging_Current_Reactive_Power" name="Lagging_Current_Reactive_Power" required>
+            </div>
+            
+            <!-- Leading_Current_Reactive_Power_kVarh -->
+            <div class="form-group">
+                <label for="Leading_Current_Reactive_Power_kVarh">Leading Current Reactive Power kVarh:</label>
+                <input type="number" class="form-control" id="Leading_Current_Reactive_Power_kVarh" name="Leading_Current_Reactive_Power_kVarh" required>
+            </div>
+            
+            <!-- Lagging_Current_Power_Factor -->
+            <div class="form-group">
+                <label for="Lagging_Current_Power_Factor">Lagging Current Power Factor:</label>
+                <input type="number" class="form-control" id="Lagging_Current_Power_Factor" name="Lagging_Current_Power_Factor" required>
+            </div>
+            
+            <!-- Leading_Current_Power_Factor Password -->
+            <div class="form-group">
+                <label for="Leading_Current_Power_Factor">Leading Current Power Factor :</label>
+                <input type="number" class="form-control" id="Leading_Current_Power_Factor" name="Leading_Current_Power_Factor" required>
+            </div>
+
+             <!-- NSM  -->
+             <div class="form-group">
+                <label for="NSM">NSM Value:</label>
+                <input type="number" class="form-control" id="NSM" name="NSM" required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Click Here to check</button>
+        </form>
+    </div>
+</body>
+</html>
